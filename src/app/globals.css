@@ -1,3 +1,108 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Paperlogy-7Bold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --primary-bg: #ffffff;
+  --secondary-bg: #f2f4f7;
+  --primary-gray: #101828;
+  --secondary-gray: #344054;
+  --tertiary-gray: #475467;
+  --quaternary-gray: #667085;
+  --primary-fill: #f2f4f7;
+  --secondary-fill: #e4e7ec;
+
+  --primary-200: #88d9f8;
+  --primary-300: #5dcaf5;
+  --primary-400: #27b3f4;
+  --primary-500: #1a91d1;
+  --highlight: #afd87c;
+
+  --font-heading: "Paperlogy-7Bold";
+  --font-body: "Pretendard Variable";
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.3rem;
+  --text-3xl: 1.45rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 2.75rem;
+  --text-6xl: 3.5rem;
+}
+
+.dark {
+  --primary-bg: #101828;
+  --secondary-bg: #191c23;
+  --primary-gray: #ffffff;
+  --secondary-gray: #f2f4f7;
+  --tertiary-gray: #e4e7ec;
+  --quaternary-gray: #d0d5dd;
+  --primary-fill: #344054;
+  --secondary-fill: #475467;
+}
+
+html {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--primary-gray);
+  line-height: 1.75;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-bold);
+  line-height: 1.35;
+  color: var(--primary-gray);
+  word-break: keep-all;
+}
+
+h1 {
+  font-size: var(--text-6xl);
+}
+
+h2 {
+  font-size: var(--text-5xl);
+}
+
+h3 {
+  font-size: var(--text-4xl);
+}
+
+h4 {
+  font-size: var(--text-3xl);
+}
+
+h5 {
+  font-size: var(--text-2xl);
+}
+
+h6 {
+  font-size: var(--text-xl);
+}
+
+p {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: var(--font-medium);
+  color: var(--teritary-gray);
+  line-height: 1.75;
+  word-break: keep-all;
+}

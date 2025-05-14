@@ -1,27 +1,18 @@
 import Container from "@/app/_components/container";
-import { EXAMPLE_PATH } from "@/lib/constants";
 
 export function Footer() {
   return (
-    <footer className="bg-neutral-50 border-t border-neutral-200 dark:bg-slate-800">
+    <footer className="bg-gradient-to-b from-primary-400 to-primary-500 py-10 text-white">
       <Container>
-        <div className="py-28 flex flex-col lg:flex-row items-center">
-          <h3 className="text-4xl lg:text-[2.5rem] font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
-            Statically Generated with Next.js.
-          </h3>
-          <div className="flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2">
-            <a
-              href="https://nextjs.org/docs/app/building-your-application/routing/layouts-and-templates"
-              className="mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"
-            >
-              Read Documentation
-            </a>
-            <a
-              href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
-              className="mx-3 font-bold hover:underline"
-            >
-              View on GitHub
-            </a>
+        <div className="flex flex-col items-center justify-between md:flex-row">
+          <div className="mb-6 flex gap-8 text-sm font-semibold md:mb-0">
+            <a href="/privacy">개인정보처리방침</a>
+            <a href="/brand">브랜드 리소스</a>
+            <a href="/faq">자주 묻는 질문</a>
+          </div>
+          <div className="flex gap-6 text-xl">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer"></a>
           </div>
         </div>
       </Container>
