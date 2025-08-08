@@ -4,7 +4,7 @@ import { useRive } from "@rive-app/react-canvas";
 
 export default function RiveTest() {
   const { rive, RiveComponent } = useRive({
-    src: "/assets/rive/runimo-test.riv",
+    src: "/assets/rive/test_01.riv",
     stateMachines: "Basic",
     autoplay: true,
   });

@@ -8,11 +8,11 @@ export function Footer() {
           <div className="mb-6 flex gap-8 text-sm font-semibold md:mb-0">
             <a href="/posts/privacy-policy">개인정보처리방침</a>
             {/* <a href="/posts/brand-resource">브랜드 리소스</a> */}
-            <a href="/posts/faq">자주 묻는 질문</a>
+            {/* <a href="/posts/faq">자주 묻는 질문</a> */}
           </div>
           <div className="flex gap-6 text-xl">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"></a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer"></a>
+            {/* <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer"></a> */}
           </div>
         </div>
       </Container>

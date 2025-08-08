@@ -1,4 +1,12 @@
+"use client";
+
 import Container from "@/app/_components/container";
+
+const handleClick = () => {
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event: "runimo-appstore" });
+  window.open("https://apps.apple.com/kr/app/%EB%9F%AC%EB%8B%88%EB%AA%A8/id6743544062?l", "_blank");
+};
 
 const HeroSection = () => {
   return (
@@ -10,10 +18,13 @@ const HeroSection = () => {
             <h1>러닝을 즐겁게!</h1>
             <h4 className="text-quaternary-gray">
               나만의 캐릭터와 함께 뛰어봐요! <br />
-              5월 출시 예정.
+              러니모 서비스 정식 출시
             </h4>
-            <button className="mt-8 cursor-pointer rounded-lg bg-primary-400 px-6 py-3">
-              <h4 className="text-white">출시 알림 받기</h4>
+            <button
+              onClick={handleClick}
+              className="mt-8 cursor-pointer rounded-lg bg-primary-400 px-6 py-3"
+            >
+              <h4 className="text-white">App Store에서 받기</h4>
             </button>
           </div>
 

@@ -4,18 +4,18 @@ import Container from "@/app/_components/container";
 const testimonials = [
   {
     quote:
-      "I appreciate the consistent reminders to be kind and patient with myself as I learn and practice daily habits that are helping me find a calmer daily space.",
-    author: "Member on forming more helpful habits",
+      "매일 아침 달린 습관이 숫자 뿐 아니라 도감이 채워지는 게 눈에 보여서 좋아요! 다음 스테이지 캐릭터도 궁금해요.",
+    author: "30대 직장인 러너",
   },
   {
     quote:
-      "Runimo helped me form a consistent running routine with fun characters and light goals. I love seeing my progress!",
-    author: "Crew runner",
+      "'모임' 기능을 통해 크루의 다양한 일정들을 생성하고 관리할 수 있어서 편했어요. 빨리 정식 출시됐으면 좋겠습니다!",
+    author: "대학교 러닝크루 운영진",
   },
   {
     quote:
-      "I never imagined running could be this cute. I come back just to see what egg hatches next.",
-    author: "Beginner runner",
+      "달릴 때마다 어떤 캐릭터가 알에서 부화할지 기대돼서 계속 들어오게 돼요. 이거 때문에라도 5km씩 뛰고 있어요! ㅋㅋㅎ",
+    author: "20대 초보 러너",
   },
 ];
 

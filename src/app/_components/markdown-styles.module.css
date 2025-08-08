@@ -16,3 +16,7 @@
 .markdown h3 {
   @apply mb-4 mt-8 text-2xl leading-snug;
 }
+
+.markdown img {
+  border-radius: 12px;
+}
