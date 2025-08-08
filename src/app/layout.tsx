@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   const headersList = headers();
   const domain = headersList.get("host");
-  const isProdDomain = domain === "https://runimo-blog.vercel.app/";
+  const isProdDomain = domain === "runimo-blog.vercel.app";
 
   return (
     <html lang="ko" suppressHydrationWarning>
