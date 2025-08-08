@@ -6,11 +6,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "@next/third-parties": "^15.4.6",
     "@rive-app/react-canvas": "^4.20.1",
     "classnames": "^2.5.1",
     "date-fns": "^3.6.0",
     "gray-matter": "^4.0.3",
-    "next": "^15.3.1",
+    "next": "^15.4.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "remark": "^15.0.1",
