@@ -15,12 +15,12 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const headersList = headers();
+  const headersList = await headers();
   const domain = headersList.get("host");
   const isProdDomain = domain === "runimo-blog.vercel.app";
 
@@ -41,8 +41,8 @@ export default function RootLayout({
       <body className="bg-primary-bg text-primary-gray">
         {isProdDomain && (
           <>
-            <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} />
-            <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+            <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID!} />
+            <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!} />
           </>
         )}
         <Header />
