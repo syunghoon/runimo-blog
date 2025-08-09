@@ -3,7 +3,6 @@ import Footer from "@/app/_components/footer";
 import { HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
-import { headers } from "next/headers";
 
 import "./globals.css";
 
@@ -20,10 +19,6 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const headersList = await headers();
-  const domain = headersList.get("host");
-  const isProdDomain = domain === "runimo-blog.vercel.app";
-
   return (
     <html lang="ko" suppressHydrationWarning>
       <head>
@@ -39,12 +34,8 @@ export default async function RootLayout({
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </head>
       <body className="bg-primary-bg text-primary-gray">
-        {isProdDomain && (
-          <>
-            <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID!} />
-            <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!} />
-          </>
-        )}
+        <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID!} />
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!} />
         <Header />
         <div className="min-h-screen pt-[80px]">{children}</div>
         <Footer />
