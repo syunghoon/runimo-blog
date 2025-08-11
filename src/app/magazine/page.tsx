@@ -16,9 +16,9 @@ export default function StorePage() {
   return (
     <main className="mt-20">
       <h2 className="mb-12 text-center font-bold">매거진</h2>
-      <div className="h-64 w-screen">
+      {/* <div className="h-64 w-screen">
         <RiveTest></RiveTest>
-      </div>
+      </div> */}
       <Container>
         {featurePosts.length > 0 && <FeatureSection posts={featurePosts} />}
         {interviewPosts.length > 0 && <InterviewSection posts={interviewPosts} />}
